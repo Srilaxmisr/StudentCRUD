@@ -15,7 +15,7 @@ import { StudentDashboardComponent } from './student-dashboard/student-dashboard
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

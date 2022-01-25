@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder,FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-student-dashboard',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentDashboardComponent implements OnInit {
 
-  constructor() { }
+  studentValue!:FormGroup
+  
+
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
+    this.studentValue=this.fb.group({
+      name:[''],
+      class:[''],
+      email:[''],
+      mobile:['']
+    })
   }
+ AddStudent(){
+
+ }
 
 }
